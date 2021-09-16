@@ -145,8 +145,12 @@ header{
       font-weight: 500;
       font-size: 24px;
       text-decoration-line: underline;
-      color: #25202F;
+      transition: 0.3s;
+      color: #47444E;
       cursor: pointer;
+    }
+    p:hover{
+      color: #25202F;
     }
     img{
       width: 24px;

@@ -297,8 +297,15 @@ header {
   font-size: 24px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  color: #25202F;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  color: #47444E;
   cursor: pointer;
+}
+
+.more .explore p:hover {
+  color: #25202F;
 }
 
 .more .explore img {
