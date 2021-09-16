@@ -132,7 +132,7 @@ header {
 }
 
 .heading img {
-  cursor: default;
+  cursor: pointer;
 }
 
 .heading ul {
@@ -154,6 +154,9 @@ header {
   font-weight: 500;
   color: #7E7F86;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .heading ul li:hover {
@@ -301,4 +304,31 @@ header {
 .more .explore img {
   width: 24px;
   cursor: pointer;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project img {
+  max-height: 620px;
+  height: 100%;
+  margin: 50px auto;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.project img:hover {
+  max-height: 670px;
+  margin: 25px auto;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.62);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.62);
 }

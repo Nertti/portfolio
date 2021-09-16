@@ -33,7 +33,7 @@ header{
   width: 100%;
   justify-content: space-between;
   img{
-    cursor: default;
+    cursor: pointer;
   }
   ul{
     display: flex;
@@ -47,6 +47,7 @@ header{
       font-weight: 500;
       color: #7E7F86;
       cursor: pointer;
+      transition: 0.3s;
     }
     li:hover{
       color: #25202F;
@@ -151,5 +152,22 @@ header{
       width: 24px;
       cursor: pointer;
     }
+  }
+}
+.project{
+  display: flex;
+  flex-direction: column;
+
+  img{
+    max-height: 620px;
+    height: 100%;
+    margin: 50px auto;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  img:hover{
+    max-height: 670px;
+    margin: 25px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.62);
   }
 }
