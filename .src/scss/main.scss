@@ -1,0 +1,136 @@
+.hi__row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .hi__txt{
+    padding: 0 0 50px;
+    .hi__title{
+      font-weight: 500;
+      font-size: 24px;
+      color: #666666;
+    }
+    .hi__name{
+      font-weight: bold;
+      font-size: 60px;
+      color: #25202F;
+      padding: 30px 0;
+    }
+    .hi__desc{
+      font-size: 24px;
+      color: #25202F;
+      padding: 10px 0 50px;
+    }
+  }
+  .hi__img{
+    position: relative;
+    z-index: 3;
+    top: -60px;
+  }
+}
+
+.services{
+  .services__head{
+    .services__title{
+      max-width: 250px;
+      padding: 10px 0 50px;
+      letter-spacing: 1.4px;
+    }
+  }
+  .services__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .services__item{
+      max-width: 350px;
+      width: 100%;
+      .services__name{
+        display: flex;
+        align-items: center;
+        .services__icon{
+          position: relative;
+          img{
+            max-width: 60px;
+          }
+          #mobile{
+            position: absolute;
+            top: 13px;
+            left: 21px;
+          }
+          #brand{
+            position: absolute;
+            top: 17px;
+            left: 18px;
+          }
+          #web{
+            position: absolute;
+            top: 18px;
+            left: 18px;
+          }
+        }
+        .services__txt{
+          padding-left: 20px;
+          font-weight: 500;
+          font-size: 26px;
+          color: #25202F;
+        }
+      }
+      .services__description{
+        padding: 20px 0;
+        font-size: 18px;
+        line-height: 32px;
+        color: #47444E;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+.portfolio{
+  padding: 70px 0;
+  min-width: 0;
+  .portfolio__head{
+    .portfolio__row{
+      display: flex;
+      justify-content: space-between;
+      .portfolio__title{
+        max-width: 200px;
+        padding: 10px 0 50px;
+      }
+      .portfolio__more{
+        display: flex;
+        max-width: 185px;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: space-between;
+        p{
+          font-weight: 500;
+          font-size: 24px;
+          text-decoration-line: underline;
+          transition: 0.3s;
+          color: #47444E;
+          cursor: pointer;
+        }
+        p:hover{
+          color: #25202F;
+        }
+        img{
+          width: 24px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .portfolio__content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .portfolio__card{
+      img{
+        max-width: 500px;
+        &:hover{
+          max-width: 550px;
+        }
+      }
+    }
+  }
+}

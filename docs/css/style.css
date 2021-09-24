@@ -96,14 +96,7 @@ h6 {
   font-family: "Red Hat Display", sans-serif;
 }
 
-header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: #fff;
-}
-
-.but {
+.button {
   max-width: 200px;
   width: 100%;
   background: #9F72D8;
@@ -118,7 +111,33 @@ header {
   cursor: pointer;
 }
 
-.heading {
+.name {
+  font-size: 18px;
+  color: #9F72D8;
+}
+
+.line {
+  border: 1px solid #9F72D8;
+  width: 50px;
+  margin: 10px 0;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  color: #25202F;
+  line-height: 45px;
+}
+
+.nav {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  background-color: #fff;
+}
+
+.nav .nav__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,11 +149,11 @@ header {
           justify-content: space-between;
 }
 
-.heading img {
+.nav .nav__row img {
   cursor: pointer;
 }
 
-.heading ul {
+.nav .nav__row ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,9 +166,8 @@ header {
           align-items: center;
 }
 
-.heading ul li {
-  font-size: 20px;
-  font-style: normal;
+.nav .nav__row ul li {
+  font-size: 18px;
   font-weight: 500;
   color: #7E7F86;
   cursor: pointer;
@@ -158,11 +176,11 @@ header {
   transition: 0.3s;
 }
 
-.heading ul li:hover {
+.nav .nav__row ul li:hover {
   color: #25202F;
 }
 
-.about {
+.hi__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,71 +192,59 @@ header {
           align-items: center;
 }
 
-.about .hello {
+.hi__row .hi__txt {
   padding: 0 0 50px;
 }
 
-.about .hello .hi {
-  font-style: normal;
+.hi__row .hi__txt .hi__title {
   font-weight: 500;
   font-size: 24px;
   color: #666666;
 }
 
-.about .hello .name {
-  font-style: normal;
+.hi__row .hi__txt .hi__name {
   font-weight: bold;
   font-size: 60px;
   color: #25202F;
   padding: 30px 0;
 }
 
-.about .hello .desc {
-  font-style: normal;
-  font-weight: normal;
+.hi__row .hi__txt .hi__desc {
   font-size: 24px;
   color: #25202F;
   padding: 10px 0 50px;
 }
 
-.title {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
-  color: #9F72D8;
+.hi__row .hi__img {
+  position: relative;
+  z-index: 3;
+  top: -60px;
 }
 
-.line {
-  border: 1px solid #9F72D8;
-  width: 50px;
+.services .services__head .services__title {
+  max-width: 250px;
+  padding: 10px 0 50px;
+  letter-spacing: 1.4px;
 }
 
-.head {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 48px;
-  color: #25202F;
-  max-width: 245px;
-  padding: 30px 0;
-}
-
-.information {
+.services .services__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.information .card {
+.services .services__content .services__item {
   max-width: 350px;
   width: 100%;
 }
 
-.information .card .head-card {
+.services .services__content .services__item .services__name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,27 +253,53 @@ header {
           align-items: center;
 }
 
-.information .card .head-card .txt-info {
-  margin-left: 20px;
-  font-style: normal;
+.services .services__content .services__item .services__name .services__icon {
+  position: relative;
+}
+
+.services .services__content .services__item .services__name .services__icon img {
+  max-width: 60px;
+}
+
+.services .services__content .services__item .services__name .services__icon #mobile {
+  position: absolute;
+  top: 13px;
+  left: 21px;
+}
+
+.services .services__content .services__item .services__name .services__icon #brand {
+  position: absolute;
+  top: 17px;
+  left: 18px;
+}
+
+.services .services__content .services__item .services__name .services__icon #web {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+.services .services__content .services__item .services__name .services__txt {
+  padding-left: 20px;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 26px;
   color: #25202F;
 }
 
-.information .card .description {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
+.services .services__content .services__item .services__description {
+  padding: 20px 0;
+  font-size: 18px;
   line-height: 32px;
   color: #47444E;
+  letter-spacing: 1px;
 }
 
-.block {
-  padding: 50px 0;
+.portfolio {
+  padding: 70px 0;
+  min-width: 0;
 }
 
-.more {
+.portfolio .portfolio__head .portfolio__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,7 +308,12 @@ header {
           justify-content: space-between;
 }
 
-.more .explore {
+.portfolio .portfolio__head .portfolio__row .portfolio__title {
+  max-width: 200px;
+  padding: 10px 0 50px;
+}
+
+.portfolio .portfolio__head .portfolio__row .portfolio__more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,8 +327,7 @@ header {
           justify-content: space-between;
 }
 
-.more .explore p {
-  font-style: normal;
+.portfolio .portfolio__head .portfolio__row .portfolio__more p {
   font-weight: 500;
   font-size: 24px;
   -webkit-text-decoration-line: underline;
@@ -303,38 +339,29 @@ header {
   cursor: pointer;
 }
 
-.more .explore p:hover {
+.portfolio .portfolio__head .portfolio__row .portfolio__more p:hover {
   color: #25202F;
 }
 
-.more .explore img {
+.portfolio .portfolio__head .portfolio__row .portfolio__more img {
   width: 24px;
   cursor: pointer;
 }
 
-.project {
+.portfolio .portfolio__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.project img {
-  max-height: 620px;
-  height: 100%;
-  margin: 50px auto;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+.portfolio .portfolio__content .portfolio__card img {
+  max-width: 500px;
 }
 
-.project img:hover {
-  max-height: 670px;
-  margin: 25px auto;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.62);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.62);
+.portfolio .portfolio__content .portfolio__card img:hover {
+  max-width: 550px;
 }

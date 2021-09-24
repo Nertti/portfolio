@@ -1,0 +1,33 @@
+.nav{
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  background-color: #fff;
+  .nav__row{
+    display: flex;
+    padding: 20px 0;
+    max-width: 500px;
+    width: 100%;
+    justify-content: space-between;
+    img{
+      cursor: pointer;
+    }
+    ul{
+      display: flex;
+      justify-content: space-around;
+      max-width: 400px;
+      width: 100%;
+      align-items: center;
+      li{
+        font-size: 18px;
+        font-weight: 500;
+        color: #7E7F86;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+          color: #25202F;
+        }
+      }
+    }
+  }
+}
