@@ -1,1 +1,1 @@
-new Swiper('portfolio__content');
+@@include('swiper.js');

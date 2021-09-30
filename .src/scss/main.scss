@@ -120,17 +120,16 @@
       }
     }
   }
-  .portfolio__content{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    .portfolio__card{
-      img{
-        max-width: 500px;
-        &:hover{
-          max-width: 550px;
-        }
-      }
+}
+.contact-me{
+  padding: 70px 0;
+  min-width: 0;
+  .contact-me__head{
+    .contact-me__title{
+      max-width: 600px;
+      width: 100%;
+      text-align: justify;
+      padding: 15px 0;
     }
   }
 }

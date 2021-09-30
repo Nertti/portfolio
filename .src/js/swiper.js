@@ -74,4 +74,4 @@ new Swiper('.image-slider',{
             slidesPerGroup: 2,
         },
     }
-});;
+});

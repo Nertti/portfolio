@@ -129,6 +129,39 @@ h6 {
   line-height: 45px;
 }
 
+.image-slider {
+  overflow-x: hidden;
+  /*для горизонтального*/
+  position: relative;
+  padding: 30px 0 70px 0;
+}
+
+.image-slider .image-slider__image {
+  text-align: center;
+}
+
+.image-slider .image-slider__image img {
+  width: 450px;
+  cursor: pointer;
+}
+
+.image-slider .swiper-button-prev:after,
+.image-slider .swiper-button-next:after {
+  color: #9F72D8;
+}
+
+.image-slider .swiper-pagination-bullet {
+  border-radius: 0;
+  width: 30px;
+  height: 4px;
+  background-color: #9F72D8;
+}
+
+.image-slider .swiper-pagination-fraction {
+  color: #25202F;
+  font-size: 20px;
+}
+
 .nav {
   position: -webkit-sticky;
   position: sticky;
@@ -348,20 +381,14 @@ h6 {
   cursor: pointer;
 }
 
-.portfolio .portfolio__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.contact-me {
+  padding: 70px 0;
+  min-width: 0;
 }
 
-.portfolio .portfolio__content .portfolio__card img {
-  max-width: 500px;
-}
-
-.portfolio .portfolio__content .portfolio__card img:hover {
-  max-width: 550px;
+.contact-me .contact-me__head .contact-me__title {
+  max-width: 600px;
+  width: 100%;
+  text-align: justify;
+  padding: 15px 0;
 }

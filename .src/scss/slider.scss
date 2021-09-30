@@ -1,0 +1,29 @@
+.image-slider{
+  overflow-x:hidden;  /*для горизонтального*/
+  position: relative;
+  padding: 30px 0 70px 0;
+  .image-slider__image{
+    text-align: center;
+    img{
+      width: 450px;
+      cursor: pointer;
+    }
+  }
+
+  .swiper-button-prev:after,
+  .swiper-button-next:after{
+    color: #9F72D8;
+  }
+
+  .swiper-pagination-bullet{
+    border-radius: 0;
+    width: 30px;
+    height: 4px;
+    background-color: #9F72D8;
+  }
+  .swiper-pagination-fraction{
+    color: #25202F;
+    font-size: 20px;
+  }
+
+}

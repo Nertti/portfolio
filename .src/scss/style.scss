@@ -1,6 +1,7 @@
 @import "mixins.scss";
 @import "normalize.scss";
 
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -40,6 +41,9 @@
   color: #25202F;
   line-height: 45px;
 }
+
+@import "slider.scss";
+
 @import "header.scss";
 
 @import "main.scss";
