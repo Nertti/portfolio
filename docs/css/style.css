@@ -400,6 +400,7 @@ h6 {
 
   .nav .nav__row {
     max-width: 450px;
+    margin: 0 auto;
   }
 
   .hi__row .hi__txt .hi__name {

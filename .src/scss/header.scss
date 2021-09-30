@@ -11,6 +11,7 @@
     justify-content: space-between;
     @include laptop-M{
       max-width: 450px;
+      margin: 0 auto;
     }
     img{
       cursor: pointer;
