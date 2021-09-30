@@ -7,12 +7,21 @@
     img{
       width: 450px;
       cursor: pointer;
+      @include small-tablet{
+        width: 300px;
+      }
+      @include mobile-M{
+        width: 250px;
+      }
     }
   }
 
   .swiper-button-prev:after,
   .swiper-button-next:after{
     color: #9F72D8;
+    @include small-tablet{
+      font-size: 0;
+    }
   }
 
   .swiper-pagination-bullet{
@@ -20,6 +29,9 @@
     width: 30px;
     height: 4px;
     background-color: #9F72D8;
+    @include mobile-L{
+      width: 20px;
+    }
   }
   .swiper-pagination-fraction{
     color: #25202F;

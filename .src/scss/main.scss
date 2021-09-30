@@ -2,6 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include laptop-S{
+    display: block;
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+  }
   .hi__txt{
     padding: 0 0 50px;
     .hi__title{
@@ -14,6 +21,9 @@
       font-size: 60px;
       color: #25202F;
       padding: 30px 0;
+      @include laptop-M{
+        font-size: 58px;
+      }
     }
     .hi__desc{
       font-size: 24px;
@@ -25,11 +35,19 @@
     position: relative;
     z-index: 3;
     top: -60px;
+    @include laptop-S{
+      display: none;
+    }
   }
 }
 
 .services{
   .services__head{
+    @include laptop-S{
+      max-width: 450px;
+      width: 100%;
+      margin: 0 auto;
+    }
     .services__title{
       max-width: 250px;
       padding: 10px 0 50px;
@@ -40,9 +58,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include laptop-S{
+      flex-direction: column;
+    }
     .services__item{
       max-width: 350px;
       width: 100%;
+      @include laptop-S{
+        max-width: 450px;
+      }
       .services__name{
         display: flex;
         align-items: center;
@@ -89,9 +113,17 @@
   padding: 70px 0;
   min-width: 0;
   .portfolio__head{
+    @include laptop-S{
+      max-width: 450px;
+      width: 100%;
+      margin: 0 auto;
+    }
     .portfolio__row{
       display: flex;
       justify-content: space-between;
+      @include laptop-S{
+        display: block;
+      }
       .portfolio__title{
         max-width: 200px;
         padding: 10px 0 50px;
@@ -125,6 +157,11 @@
   padding: 70px 0;
   min-width: 0;
   .contact-me__head{
+    @include laptop-S{
+      max-width: 450px;
+      width: 100%;
+      margin: 0 auto;
+    }
     .contact-me__title{
       max-width: 600px;
       width: 100%;

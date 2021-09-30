@@ -31,10 +31,10 @@ new Swiper('.image-slider',{
         pageUpDown: true,
     },
 
-    mousewheel: {
-        sensitivity: 1,
-        eventsTarget: '.image-slider',
-    },
+    // mousewheel: {
+    //     sensitivity: 1,
+    //     eventsTarget: '.image-slider',
+    // },
 
     //slideToClickedSlide: true,
 

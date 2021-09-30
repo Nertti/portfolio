@@ -13,18 +13,38 @@
     @content;
   }
 }
-@mixin tablet-default {
+@mixin small-tablet {
+  @media screen and (max-width: 580px) {
+    @content;
+  }
+}
+@mixin tablet {
   @media screen and (max-width: 768px) {
     @content;
   }
 }
-@mixin laptop {
-  @media screen and (max-width: 1024px) {
+@mixin laptop-XS {
+  @media screen and (max-width: 956px) {
+    @content;
+  }
+}
+@mixin laptop-S {
+  @media screen and (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin laptop-M {
+  @media screen and (max-width: 1220px) {
     @content;
   }
 }
 @mixin laptop-L {
   @media screen and (max-width: 1440px) {
+    @content;
+  }
+}
+@mixin laptop-XL {
+  @media screen and (max-width: 1660px) {
     @content;
   }
 }

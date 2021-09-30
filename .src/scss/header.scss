@@ -9,6 +9,9 @@
     max-width: 500px;
     width: 100%;
     justify-content: space-between;
+    @include laptop-M{
+      max-width: 450px;
+    }
     img{
       cursor: pointer;
     }
