@@ -154,8 +154,8 @@ h6 {
 
 .image-slider .swiper-pagination-bullet {
   border-radius: 0;
-  width: 30px;
-  height: 4px;
+  width: 50px;
+  height: 5px;
   background-color: #9F72D8;
 }
 
@@ -469,6 +469,7 @@ h6 {
 
 @media screen and (max-width: 425px) {
   .image-slider .swiper-pagination-bullet {
-    width: 20px;
+    width: 30px;
+    height: 3px;
   }
 }

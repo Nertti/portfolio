@@ -51,7 +51,7 @@ new Swiper('.image-slider',{
     //freeMode: true,
 
     autoplay: {
-        delay: 5000,
+        delay: 3000,
         //stopOnLastSlide: true,
         disableOnInteraction: true,
     },

@@ -24,11 +24,12 @@
 
   .swiper-pagination-bullet{
     border-radius: 0;
-    width: 30px;
-    height: 4px;
+    width: 50px;
+    height: 5px;
     background-color: #9F72D8;
     @include mobile-L{
-      width: 20px;
+      width: 30px;
+      height: 3px;
     }
   }
   .swiper-pagination-fraction{
