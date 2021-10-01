@@ -134,6 +134,7 @@ h6 {
   /*для горизонтального*/
   position: relative;
   padding: 30px 0 70px 0;
+  z-index: 1;
 }
 
 .image-slider .image-slider__image {
@@ -398,17 +399,17 @@ h6 {
     max-width: calc(100% - 40px);
   }
 
-  .nav .nav__row {
-    max-width: 450px;
-    margin: 0 auto;
-  }
-
   .hi__row .hi__txt .hi__name {
     font-size: 58px;
   }
 }
 
 @media screen and (max-width: 1023px) {
+  .nav .nav__row {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
   .hi__row {
     display: block;
     max-width: 450px;
@@ -456,7 +457,7 @@ h6 {
 
 @media screen and (max-width: 580px) {
   .image-slider .image-slider__image img {
-    width: 300px;
+    width: 380px;
   }
 
   .image-slider .swiper-button-prev:after,
@@ -466,13 +467,11 @@ h6 {
 }
 
 @media screen and (max-width: 425px) {
+  .image-slider .image-slider__image img {
+    width: 280px;
+  }
+
   .image-slider .swiper-pagination-bullet {
     width: 20px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .image-slider .image-slider__image img {
-    width: 250px;
   }
 }
