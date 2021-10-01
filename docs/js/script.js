@@ -21,9 +21,9 @@ new Swiper('.image-slider',{
 
     //grabCursor: true,
 
-    hashNavigation:{
-        watchState: true,
-    },
+    // hashNavigation:{
+    //     watchState: true,
+    // },
 
     keyboard: {
         enabled: true,
