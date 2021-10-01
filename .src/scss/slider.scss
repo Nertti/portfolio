@@ -9,10 +9,7 @@
       width: 450px;
       cursor: pointer;
       @include small-tablet{
-        width: 380px;
-      }
-      @include mobile-L{
-        width: 280px;
+        width: calc(100% - 10px);
       }
     }
   }

@@ -458,7 +458,7 @@ h6 {
 
 @media screen and (max-width: 580px) {
   .image-slider .image-slider__image img {
-    width: 380px;
+    width: calc(100% - 10px);
   }
 
   .image-slider .swiper-button-prev:after,
@@ -468,10 +468,6 @@ h6 {
 }
 
 @media screen and (max-width: 425px) {
-  .image-slider .image-slider__image img {
-    width: 280px;
-  }
-
   .image-slider .swiper-pagination-bullet {
     width: 20px;
   }
