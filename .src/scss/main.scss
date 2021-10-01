@@ -8,6 +8,7 @@
     max-width: 450px;
     width: 100%;
     margin: 0 auto;
+    padding: 20px 0;
   }
   .hi__txt{
     padding: 0 0 50px;
@@ -24,11 +25,17 @@
       @include laptop-M{
         font-size: 58px;
       }
+      @include laptop-S{
+        font-size: 50px;
+      }
     }
     .hi__desc{
       font-size: 24px;
       color: #25202F;
       padding: 10px 0 50px;
+      @include laptop-S{
+        padding: 5px 0 30px;
+      }
     }
   }
   .hi__img{
@@ -112,6 +119,9 @@
 .portfolio{
   padding: 70px 0;
   min-width: 0;
+  @include laptop-S{
+    padding: 30px 0;
+  }
   .portfolio__head{
     @include laptop-S{
       max-width: 450px;
@@ -123,6 +133,7 @@
       justify-content: space-between;
       @include laptop-S{
         display: block;
+        padding: 0 0 20px;
       }
       .portfolio__title{
         max-width: 200px;
