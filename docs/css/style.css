@@ -553,7 +553,9 @@ body.lock {
   }
 
   .nav .nav__row .nav__burger:before,
-  .nav .nav__row .nav__burger:after {
+  .nav .nav__row .nav__burger:after,
+  .nav .nav__row .nav__burger div,
+  .nav .nav__row .nav__burger span {
     content: "";
     background-color: #9F72D8;
     position: absolute;
@@ -573,15 +575,14 @@ body.lock {
     bottom: 0;
   }
 
-  .nav .nav__row .nav__burger span {
-    position: absolute;
-    background-color: #9F72D8;
-    width: 100%;
-    height: 1.4px;
+  .nav .nav__row .nav__burger div {
+    height: 1px;
     top: 9px;
-    -webkit-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
+  }
+
+  .nav .nav__row .nav__burger span {
+    height: 1px;
+    top: 10px;
   }
 
   .nav .nav__row .active:before {
@@ -598,10 +599,16 @@ body.lock {
     bottom: 9px;
   }
 
+  .nav .nav__row .active div {
+    -webkit-transform: rotate(-225deg);
+        -ms-transform: rotate(-225deg);
+            transform: rotate(-225deg);
+  }
+
   .nav .nav__row .active span {
-    -webkit-transform: scale(0);
-        -ms-transform: scale(0);
-            transform: scale(0);
+    -webkit-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+            transform: rotate(225deg);
   }
 
   .nav .nav__row .nav__menu {
