@@ -42,16 +42,16 @@ body.lock{
       @include tablet-XS{
         display: block;
         position: relative;
-        top: 10px;
+        top: 8px;
         z-index: 5;
-        width: 30px;
-        height: 20px;
-        &:before,&:after,div,span{
+        width: 35px;
+        height: 23px;
+        &:before,&:after,span{
           content: '';
           background-color: #9F72D8;
           position: absolute;
           width: 100%;
-          height: 2px;
+          height: 3px;
           left: 0;
           transition: all 0.9s ease 0s;
         }
@@ -61,12 +61,7 @@ body.lock{
         &:after{
           bottom: 0;
         }
-        div{
-          height: 1px;
-          top: 9px;
-        }
         span{
-          height: 1px;
           top: 10px;
         }
       }
@@ -76,21 +71,16 @@ body.lock{
         &:before{
           transform: rotate(45deg);
           //transform: rotate(225deg);
-          top: 9px;
+          top: 10px;
         }
         &:after{
           transform: rotate(-45deg);
           //transform: rotate(-225deg);
 
-          bottom: 9px;
-        }
-        div{
-          transform: scale(0);
-          //transform: rotate(-225deg);
+          bottom: 10px;
         }
         span{
           transform: scale(0);
-          //transform: rotate(225deg);
         }
       }
     }
