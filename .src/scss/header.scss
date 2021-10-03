@@ -29,7 +29,7 @@ body.lock{
       max-width: 450px;
       margin: 0 auto;
     }
-    @include tablet-XS{
+    @include tablet-M{
       padding: 10px 0;
     }
     img{
@@ -39,7 +39,7 @@ body.lock{
     }
     .nav__burger{
       display: none;
-      @include tablet-XS{
+      @include tablet-M{
         display: block;
         position: relative;
         top: 8px;
@@ -54,6 +54,7 @@ body.lock{
           height: 3px;
           left: 0;
           transition: all 0.4s ease 0s;
+          border-radius: 10px;
         }
         &:before{
           top: 0;
@@ -66,7 +67,7 @@ body.lock{
         }
       }
     }
-    @include tablet-XS{
+    @include tablet-M{
       .active{
         &:before{
           transform: rotate(45deg);
@@ -85,7 +86,7 @@ body.lock{
       }
     }
     .nav__menu{
-      @include tablet-XS{
+      @include tablet-M{
         display: block;
         position: fixed;
         top: -100%;
@@ -114,12 +115,13 @@ body.lock{
         max-width: 400px;
         width: 100%;
         align-items: center;
-        @include tablet-XS{
+        @include tablet-M{
           flex-direction: column;
           padding: 30px 0;
+          margin: 0 auto;
         }
         li{
-          @include tablet-XS{
+          @include tablet-M{
             margin: 10px 0;
             color: #fff;
             font-size: 22px;
