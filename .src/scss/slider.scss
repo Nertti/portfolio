@@ -8,7 +8,8 @@
     img{
       width: 450px;
       cursor: pointer;
-      @include small-tablet{
+      @include tablet-S{
+        max-width: 450px;
         width: calc(100% - 10px);
       }
     }
@@ -17,7 +18,7 @@
   .swiper-button-prev:after,
   .swiper-button-next:after{
     color: #9F72D8;
-    @include small-tablet{
+    @include tablet-S{
       font-size: 0;
     }
   }

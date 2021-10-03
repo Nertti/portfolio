@@ -13,12 +13,17 @@
     @content;
   }
 }
-@mixin small-tablet {
-  @media screen and (max-width: 580px) {
+@mixin tablet-XS {
+  @media screen and (max-width: 500px) {
     @content;
   }
 }
-@mixin tablet {
+@mixin tablet-S {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+@mixin tablet-M {
   @media screen and (max-width: 768px) {
     @content;
   }

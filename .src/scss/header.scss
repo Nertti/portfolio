@@ -1,9 +1,25 @@
+body.lock{
+  overflow: hidden;
+}
 .nav{
-  position: sticky;
-  z-index: 2;
+  position: fixed;
+  z-index: 50;
   top: 0;
+  left: 0;
   background-color: #fff;
+  width: 100%;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 4;
+  }
   .nav__row{
+    position: relative;
     display: flex;
     padding: 20px 0;
     max-width: 500px;
@@ -13,23 +29,114 @@
       max-width: 450px;
       margin: 0 auto;
     }
+    @include tablet-XS{
+      padding: 10px 0;
+    }
     img{
       cursor: pointer;
+      position: relative;
+      z-index: 5;
     }
-    ul{
-      display: flex;
-      justify-content: space-around;
+    .nav__burger{
+      display: none;
+      @include tablet-XS{
+        display: block;
+        position: relative;
+        top: 10px;
+        z-index: 5;
+        width: 30px;
+        height: 20px;
+        &:before,&:after{
+          content: '';
+          background-color: #9F72D8;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          left: 0;
+          transition: all 0.4s ease 0s;
+        }
+        &:before{
+          top: 0;
+        }
+        &:after{
+          bottom: 0;
+        }
+        span{
+          position: absolute;
+          background-color: #9F72D8;
+          width: 100%;
+          height: 2px;
+          top: 9px;
+          transition: all 0.4s ease 0s;
+        }
+      }
+    }
+    @include tablet-XS{
+      .active{
+        &:before{
+          transform: rotate(45deg);
+          //transform: rotate(225deg);
+          top: 9px;
+        }
+        &:after{
+          transform: rotate(-45deg);
+          //transform: rotate(-225deg);
+
+          bottom: 9px;
+        }
+        span{
+          transform: scale(0);
+        }
+      }
+    }
+    .nav__menu{
+      @include tablet-XS{
+        display: block;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        max-width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: #9F72D8;
+        padding: 80px;
+        z-index: 3;
+        color: #fff;
+        transition: all 0.4s ease 0s;
+      }
+      &.active{
+        top: 0;
+      }
+      position: relative;
+      z-index: 4;
       max-width: 400px;
       width: 100%;
+      display: flex;
       align-items: center;
-      li{
-        font-size: 18px;
-        font-weight: 500;
-        color: #7E7F86;
-        cursor: pointer;
-        transition: 0.3s;
-        &:hover{
-          color: #25202F;
+      .nav__list{
+        display: flex;
+        justify-content: space-around;
+        max-width: 400px;
+        width: 100%;
+        align-items: center;
+        @include tablet-XS{
+          flex-direction: column;
+          padding: 30px 0;
+        }
+        li{
+          @include tablet-XS{
+            margin: 10px 0;
+            color: #fff;
+            font-size: 22px;
+          }
+          font-size: 18px;
+          font-weight: 500;
+          color: #7E7F86;
+          cursor: pointer;
+          transition: 0.3s;
+          &:hover{
+            color: #25202F;
+          }
         }
       }
     }

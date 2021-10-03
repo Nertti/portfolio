@@ -16,12 +16,17 @@
     <div class="container">
         <div class="nav__row">
             <img title="My instagram" onclick="location.href='https://www.instagram.com/nertti'" src="img/Logo.svg">
-            <ul>
-                <li onclick="location.href=''" title="About me">About</li>
-                <li title="">Services</li>
-                <li title="">Works</li>
-                <li title="">Contact Me</li>
-            </ul>
+            <div class="nav__burger">
+                <span></span>
+            </div>
+            <nav class="nav__menu">
+                <ul class="nav__list">
+                    <li onclick="location.href=''" title="About me">About</li>
+                    <li title="">Services</li>
+                    <li title="">Works</li>
+                    <li title="">Contact Me</li>
+                </ul>
+            </nav>
         </div>
     </div>
 </header>
@@ -38,7 +43,7 @@
                         </div>
                     </div>
                     <div class="hi__img">
-                        <img src="img/icon-me.svg" height="700" alt="my-photo">
+                        <img src="img/icon.svg" height="600" alt="my-photo">
                     </div>
                 </div>
             </div>
@@ -176,6 +181,7 @@
 </footer>
 </div>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 <script src="js/script.min.js"></script>
 </body>
 </html>
