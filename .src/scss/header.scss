@@ -3,6 +3,18 @@
     overflow: hidden;
   }
 }
+.nertti{
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+  letter-spacing: 2px;
+  display: none;
+  //padding: 10px 0 0;
+  //color: #5E4BCF;
+  @include tablet-XS{
+    display: block;
+    z-index: 5;
+  }
+}
 .nav{
   position: fixed;
   z-index: 50;

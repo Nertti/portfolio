@@ -46,14 +46,14 @@ new Swiper('.image-slider',{
     loop: true,
 
     //стартовый слайд
-    initialSlide: 1,
+    initialSlide: 0,
 
     //freeMode: true,
 
     autoplay: {
-        delay: 3000,
+        delay: 5000,
         //stopOnLastSlide: true,
-        disableOnInteraction: true,
+        //disableOnInteraction: true,
     },
 
     speed: 1000,
