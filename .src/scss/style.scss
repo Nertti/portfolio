@@ -6,6 +6,8 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+
+  user-select: none;
 }
 
 .container {
@@ -48,9 +50,10 @@
 .title{
   font-weight: bold;
   font-size: 36px;
-  color: #25202F;
+  color: #404040;
   line-height: 45px;
 }
+
 
 @import "slider.scss";
 
