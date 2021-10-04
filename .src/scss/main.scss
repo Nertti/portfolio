@@ -148,8 +148,6 @@
         }
       }
       .services__description{
-        @include tablet-XS{
-        }
         display: none;
         padding: 20px 0;
         font-size: 18px;

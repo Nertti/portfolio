@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    if($('.services__description').slideUp()){
+        $('.services__name').removeClass('active');
+    }
     $(window).resize(function () {
         if ($(window).width() < 500) {
             $('.services__content').addClass('spoiler');
