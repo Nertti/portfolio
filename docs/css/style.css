@@ -381,6 +381,7 @@ h6 {
 }
 
 .services .services__content .services__item .services__description {
+  display: none;
   padding: 20px 0;
   font-size: 18px;
   line-height: 32px;
@@ -557,7 +558,7 @@ h6 {
   }
 
   .hi__row {
-    padding: 80px 0 30px;
+    padding: 80px 0 0;
   }
 }
 
@@ -661,11 +662,74 @@ h6 {
     color: #fff;
     font-size: 22px;
   }
+
+  .services .services__content .services__item .services__name {
+    padding: 10px 0;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .services .services__content .services__item .services__name:before,
+  .services .services__content .services__item .services__name:after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #404040;
+    position: absolute;
+    top: 40px;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    border-radius: 10px;
+  }
+
+  .services .services__content .services__item .services__name:before {
+    -webkit-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+            transform: rotate(40deg);
+    right: 15px;
+  }
+
+  .services .services__content .services__item .services__name:after {
+    -webkit-transform: rotate(-40deg);
+        -ms-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+    right: 1px;
+  }
+
+  .services .services__content .services__item .services__name.active:before,
+  .services .services__content .services__item .services__name.active:after {
+    background-color: #9F72D8;
+  }
+
+  .services .services__content .services__item .services__name.active:after {
+    -webkit-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+
+  .services .services__content .services__item .services__name.active:before {
+    -webkit-transform: rotate(-40deg);
+        -ms-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
 }
 
 @media screen and (max-width: 425px) {
   .image-slider .swiper-pagination-bullet {
     width: 30px;
     height: 3px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .services .services__content .services__item .services__name .services__txt {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .services .services__content .services__item .services__name .services__txt {
+    font-size: 18px;
   }
 }
