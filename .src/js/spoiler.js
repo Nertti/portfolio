@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    if($('.services__description').slideUp()){
+    if($('.services__description').slideUp() === true){
         $('.services__name').removeClass('active');
     }
     $(window).resize(function () {
