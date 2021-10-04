@@ -93,7 +93,12 @@ $(document).ready(function () {
         }
     });
     $('.services__name').click(function () {
-        if($('.services__content').hasClass('spoiler'))
+        if($('.services__content').hasClass('spoiler')){
+            if($('.services__content').hasClass('one')){
+                $('.services__name').not($(this)).removeClass('active');
+                $('.services__description').not($(this).next()).slideUp();
+            }
             $(this).toggleClass('active').next().slideToggle();
+        }
     });
 });;
