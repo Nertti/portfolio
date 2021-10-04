@@ -101,6 +101,9 @@ $(document).ready(function () {
         $('.services__content').removeClass('spoiler');
         $('.services__name').removeClass('active');
     }
+    if($('.services__description').slideToggle() === true && $('.services__name').hasClass('active')){
+        $('.services__name').removeClass('active');
+    }
     $('.services__name').click(function () {
         if($('.services__content').hasClass('spoiler')){
             if($('.services__content').hasClass('one')){
