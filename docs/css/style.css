@@ -99,8 +99,7 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
-  -ms-touch-action: none;
-      touch-action: none;
+  outline: none;
 }
 
 .container {
