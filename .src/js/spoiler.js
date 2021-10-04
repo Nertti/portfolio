@@ -3,12 +3,25 @@ $(document).ready(function () {
         if ($(window).width() < 500) {
             $('.services__content').addClass('spoiler');
             $('.services__description').slideUp();
-        } else {
+        }
+        if ($(window).width() > 500) {
             $('.services__content').removeClass('spoiler');
             $('.services__name').removeClass('active');
             $('.services__description').slideDown();
         }
     });
+    if ($(window).width() < 500) {
+        $('.services__content').addClass('spoiler');
+        $('.services__description').slideUp();
+    }
+    if ($(window).width() > 500) {
+        $('.services__content').removeClass('spoiler');
+        $('.services__name').removeClass('active');
+        $('.services__description').slideDown();
+    }
+    if($('.services__description').slideUp() === true){
+        $('.services__name').removeClass('active');
+    }
     $('.services__name').click(function () {
         if($('.services__content').hasClass('spoiler')){
             if($('.services__content').hasClass('one')){
