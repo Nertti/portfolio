@@ -16,6 +16,9 @@ $(document).ready(function () {
                 $('.services__description').not($(this).next()).slideUp();
             }
             $(this).toggleClass('active').next().slideToggle();
+            if($(this).slideUp){
+                $(this).removeClass('active');
+            }
         }
     });
 });
