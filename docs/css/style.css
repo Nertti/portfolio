@@ -99,7 +99,7 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
-  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .container {
