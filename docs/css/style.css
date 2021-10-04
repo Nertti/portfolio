@@ -687,7 +687,7 @@ h6 {
     -webkit-transform: rotate(40deg);
         -ms-transform: rotate(40deg);
             transform: rotate(40deg);
-    right: 15px;
+    right: 16px;
   }
 
   .services .services__content .services__item .services__name:after {
