@@ -99,10 +99,6 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 .container {
@@ -545,6 +541,15 @@ h6 {
     max-width: 450px;
     width: 100%;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
 }
 
