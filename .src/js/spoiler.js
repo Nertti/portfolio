@@ -12,14 +12,10 @@ $(document).ready(function () {
     });
     if ($(window).width() < 500) {
         $('.services__content').addClass('spoiler');
-        $('.services__description').slideUp();
     }
     if ($(window).width() > 500) {
-        $('.services__content').removeClass('spoiler');
-        $('.services__name').removeClass('active');
         $('.services__description').slideDown();
-    }
-    if($('.services__description').slideUp() === true){
+        $('.services__content').removeClass('spoiler');
         $('.services__name').removeClass('active');
     }
     $('.services__name').click(function () {
