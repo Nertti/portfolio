@@ -315,6 +315,10 @@ h6 {
   top: -60px;
 }
 
+.services {
+  padding-bottom: 70px;
+}
+
 .services .services__head .services__title {
   max-width: 250px;
   padding: 10px 0 50px;
@@ -390,7 +394,7 @@ h6 {
 }
 
 .portfolio {
-  padding: 70px 0;
+  padding-bottom: 70px;
   min-width: 0;
 }
 
@@ -454,7 +458,7 @@ h6 {
 }
 
 .contact-me {
-  padding: 70px 0;
+  padding-bottom: 70px;
   min-width: 0;
 }
 
@@ -519,7 +523,7 @@ h6 {
   }
 
   .portfolio {
-    padding: 30px 0;
+    padding: 0 0 30px;
   }
 
   .portfolio .portfolio__head {

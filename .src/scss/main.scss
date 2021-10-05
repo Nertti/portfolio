@@ -51,6 +51,7 @@
 }
 
 .services{
+  padding-bottom: 70px;
   .services__head{
     @include laptop-S{
       max-width: 450px;
@@ -160,10 +161,10 @@
 }
 
 .portfolio{
-  padding: 70px 0;
+  padding-bottom: 70px;
   min-width: 0;
   @include laptop-S{
-    padding: 30px 0;
+    padding: 0 0 30px;
   }
   .portfolio__head{
     @include laptop-S{
@@ -224,7 +225,7 @@
   }
 }
 .contact-me{
-  padding: 70px 0;
+  padding-bottom: 70px;
   min-width: 0;
   .contact-me__head{
     @include laptop-S{
