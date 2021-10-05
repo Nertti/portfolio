@@ -17,12 +17,12 @@
     .hi__title{
       font-weight: 500;
       font-size: 24px;
-      color: #666666;
+      color: $txt;
     }
     .hi__name{
       font-weight: bold;
       font-size: 60px;
-      color: #404040;
+      color: $title;
       padding: 30px 0;
       @include laptop-M{
         font-size: 58px;
@@ -33,7 +33,7 @@
     }
     .hi__desc{
       font-size: 24px;
-      color: #666666;
+      color: $txt;
       padding: 10px 0 50px;
       @include laptop-S{
         padding: 5px 0 30px;
@@ -42,8 +42,8 @@
   }
   .hi__img{
     position: relative;
-    z-index: 51;
-    top: -60px;
+    //z-index: 51;
+    //top: -60px;
     @include laptop-S{
       display: none;
     }
@@ -89,7 +89,7 @@
             content: '';
             width: 20px;
             height: 2px;
-            background-color: #404040;
+            background-color: $title;
             position: absolute;
             top: 40px;
             transition: all 0.4s ease 0s;
@@ -105,7 +105,7 @@
           }
           &.active:before,
           &.active:after{
-            background-color: #9F72D8;
+            background-color: $purple;
           }
           &.active:after{
             transform: rotate(40deg);
@@ -145,7 +145,7 @@
           padding-left: 20px;
           font-weight: 500;
           font-size: 26px;
-          color: #404040;
+          color: $title;
         }
       }
       .services__description{
@@ -153,7 +153,7 @@
         padding: 20px 0;
         font-size: 18px;
         line-height: 32px;
-        color: #666666;
+        color: $txt;
         letter-spacing: 1px;
       }
     }
@@ -194,11 +194,11 @@
           font-size: 24px;
           text-decoration-line: underline;
           transition: 0.3s;
-          color: #666666;
+          color: $txt;
           cursor: pointer;
         }
         p:hover{
-          color: #404040;
+          color: $title;
         }
         img{
           width: 24px;
@@ -215,7 +215,7 @@
       line-height: 50px;
       padding: 20px 0;
       font-weight: 500;
-      color: #404040;
+      color: $title;
       @include laptop-S{
         font-size: 25px;
         line-height: 30px;
@@ -238,7 +238,7 @@
       width: 100%;
       text-align: justify;
       padding: 15px 0;
-      color: #404040;
+      color: $title;
     }
   }
 }

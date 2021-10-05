@@ -1,13 +1,18 @@
 @import "mixins.scss";
 @import "normalize.scss";
-
+@import "dark.scss";
 .wrapper{
   min-height: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  //user-select: none;
-  -webkit-tap-highlight-color: transparent;
+  background-color: $bgc;
+  //.dark{
+  //  @import "dark.scss";
+  //}
+  //.light{
+  //  @import "light.scss";
+  //}
 }
 
 .container {
@@ -23,7 +28,7 @@
 .button{
   max-width: 200px;
   width: 100%;
-  background: #9F72D8;
+  background: $purple;
   border-radius: 100px;
   text-align: center;
   padding: 14px 0;
@@ -31,26 +36,26 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
-  color: #FFFFFF;
+  color: $white_txt;
   cursor: pointer;
 }
 
 .name{
   font-size: 18px;
-  color: #9F72D8;
+  color: $purple;
 }
 
 .line{
-  border: 1px solid #9F72D8;
+  border: 1px solid $purple;
   width: 50px;
   margin: 10px 0;
-  background-color: #9F72D8;
+  background-color: $purple;
 }
 
 .title{
   font-weight: bold;
   font-size: 36px;
-  color: #404040;
+  color: $title;
   line-height: 45px;
 }
 

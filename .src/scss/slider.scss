@@ -6,6 +6,7 @@
   .image-slider__image{
     text-align: center;
     img{
+      opacity: 0.8;
       width: 450px;
       cursor: pointer;
       @include tablet-S{
@@ -17,7 +18,7 @@
 
   .swiper-button-prev:after,
   .swiper-button-next:after{
-    color: #9F72D8;
+    color: $purple;
     @include tablet-S{
       font-size: 0;
     }
@@ -27,14 +28,14 @@
     border-radius: 0;
     width: 50px;
     height: 5px;
-    background-color: #9F72D8;
+    background-color: $purple;
     @include mobile-L{
       width: 30px;
       height: 3px;
     }
   }
   .swiper-pagination-fraction{
-    color: #25202F;
+    color: $title;
     font-size: 20px;
   }
 

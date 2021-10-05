@@ -9,7 +9,7 @@
   letter-spacing: 2px;
   display: none;
   //padding: 10px 0 0;
-  color: #404040;
+  color: $title;
   @include tablet-XS{
     display: block;
     z-index: 5;
@@ -20,7 +20,6 @@
   z-index: 50;
   top: 0;
   left: 0;
-  background-color: #fff;
   width: 100%;
   &:before{
     content: '';
@@ -29,7 +28,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: $header;
     z-index: 4;
   }
   .nav__row{
@@ -62,7 +61,7 @@
         height: 23px;
         &:before,&:after,span{
           content: '';
-          background-color: #9F72D8;
+          background-color: $purple;
           position: absolute;
           width: 100%;
           height: 3px;
@@ -108,10 +107,9 @@
         max-width: 100%;
         height: 100%;
         overflow: auto;
-        background-color: #9F72D8;
+        background-color: $purple;
         padding: 80px 0 0;
         z-index: 3;
-        color: #fff;
         transition: all 0.4s ease 0s;
       }
       &.active{
@@ -137,16 +135,18 @@
         li{
           @include tablet-XS{
             margin: 10px 0;
-            color: #fff;
+            color: $mobil_link;
             font-size: 22px;
           }
           font-size: 18px;
           font-weight: 500;
-          color: #7E7F86;
+          color: $nav_link;
+          //color: rgba(102, 102, 102, 0.8);
           cursor: pointer;
           transition: 0.3s;
           &:hover{
-            color: #25202F;
+            color: $txt;
+            //color: #666666;
           }
         }
       }
