@@ -2,6 +2,7 @@ $(document).ready(function () {
     $(window).resize(function () {
         if ($(window).width() < 500) {
             $('.services__content').addClass('spoiler');
+            $('.services__name').removeClass('active');
             $('.services__description').slideUp();
         }
         if ($(window).width() > 500) {
@@ -11,6 +12,10 @@ $(document).ready(function () {
         }
     });
     if ($(window).width() < 500) {
+        $(window).scroll(function(){
+            $('.services__name').removeClass('active');
+            $('.services__description').slideUp();
+        });
         $('.services__content').addClass('spoiler');
     }
     if ($(window).width() > 500) {
