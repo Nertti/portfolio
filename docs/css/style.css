@@ -112,7 +112,7 @@ h6 {
 .button {
   max-width: 200px;
   width: 100%;
-  background: #845fb4;
+  background: #8a63bd;
   border-radius: 100px;
   text-align: center;
   padding: 14px 0;
@@ -126,14 +126,14 @@ h6 {
 
 .name {
   font-size: 18px;
-  color: #845fb4;
+  color: #8a63bd;
 }
 
 .line {
-  border: 1px solid #845fb4;
+  border: 1px solid #8a63bd;
   width: 50px;
   margin: 10px 0;
-  background-color: #845fb4;
+  background-color: #8a63bd;
 }
 
 .title {
@@ -163,14 +163,14 @@ h6 {
 
 .image-slider .swiper-button-prev:after,
 .image-slider .swiper-button-next:after {
-  color: #845fb4;
+  color: #8a63bd;
 }
 
 .image-slider .swiper-pagination-bullet {
   border-radius: 0;
   width: 50px;
   height: 5px;
-  background-color: #845fb4;
+  background-color: #8a63bd;
 }
 
 .image-slider .swiper-pagination-fraction {
@@ -354,6 +354,7 @@ h6 {
 }
 
 .services .services__content .services__item .services__name .services__icon img {
+  color: #cccccc;
   max-width: 60px;
 }
 
@@ -591,7 +592,7 @@ h6 {
   .nav .nav__row .nav__burger:after,
   .nav .nav__row .nav__burger span {
     content: "";
-    background-color: #845fb4;
+    background-color: #8a63bd;
     position: absolute;
     width: 100%;
     height: 3px;
@@ -642,7 +643,7 @@ h6 {
     max-width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: #845fb4;
+    background-color: #634788;
     padding: 80px 0 0;
     z-index: 3;
     -webkit-transition: all 0.4s ease 0s;
@@ -700,7 +701,7 @@ h6 {
 
   .services .services__content .services__item .services__name.active:before,
   .services .services__content .services__item .services__name.active:after {
-    background-color: #845fb4;
+    background-color: #8a63bd;
   }
 
   .services .services__content .services__item .services__name.active:after {

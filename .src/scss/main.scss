@@ -117,6 +117,7 @@
         .services__icon{
           position: relative;
           img{
+            color: $title;
             max-width: 60px;
           }
           #mobile{
