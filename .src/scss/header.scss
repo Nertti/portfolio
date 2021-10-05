@@ -35,7 +35,7 @@
     position: relative;
     display: flex;
     padding: 20px 0;
-    max-width: 500px;
+    max-width: 700px;
     width: 100%;
     justify-content: space-between;
     @include laptop-S{
@@ -55,7 +55,7 @@
         position: absolute;
         line-height: 40px;
         font-size: 30px;
-        color: $title;
+        color: $nav_title;
         font-weight: 800;
         top: -1px;
         left: 1px;
@@ -128,14 +128,14 @@
       }
       position: relative;
       z-index: 4;
-      max-width: 400px;
+      max-width: 550px;
       width: 100%;
       display: flex;
       align-items: center;
       .nav__list{
         display: flex;
         justify-content: space-around;
-        max-width: 400px;
+        max-width: 600px;
         width: 100%;
         align-items: center;
         margin: 0 auto;

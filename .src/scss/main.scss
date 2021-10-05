@@ -229,17 +229,41 @@
   padding-bottom: 70px;
   min-width: 0;
   .contact-me__head{
+    max-width: 450px;
     @include laptop-S{
       max-width: 450px;
       width: 100%;
       margin: 0 auto;
     }
     .contact-me__title{
-      max-width: 600px;
+      @include mobile-L{
+        font-size: 30px;
+      }
+      @include mobile-S{
+        font-size: 25px;
+      }
       width: 100%;
       text-align: justify;
       padding: 15px 0;
       color: $title;
+    }
+  }
+  .contact-me__content{
+    padding: 20px 0;
+    .contact-me__icons{
+      display: flex;
+      justify-content: space-around;
+      .contact-me__icon{
+        position: relative;
+        max-width: 100px;
+        width: 100%;
+        .icon{
+          max-width: 100%;
+        }
+        &.icon_up{
+          top: 30px;
+        }
+      }
     }
   }
 }

@@ -9,9 +9,14 @@
       opacity: 0.8;
       width: 450px;
       cursor: pointer;
+      //filter: grayscale(1);
+      //transition: all 0.4s ease 0s;
       @include tablet-S{
         max-width: 450px;
         width: calc(100% - 10px);
+      }
+      &:hover{
+        //filter: grayscale(0);
       }
     }
   }
