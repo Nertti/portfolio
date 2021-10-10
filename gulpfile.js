@@ -26,7 +26,7 @@ let path = {
     clean: './' + project_folder + '/'
 }
 
-let { src, dest } = require('gulp'),
+let { src, dest: docs } = require('gulp'),
     gulp = require('gulp'),
     browsersync = require('browser-sync').create(),
     fileinclude = require('gulp-file-include'),
@@ -50,7 +50,7 @@ function browserSync(params) {
 function html() {
     return src(path.src.html)
         .pipe(fileinclude())
-        .pipe(dest(path.build.html))
+        .pipe(docs(path.build.html))
         .pipe(browsersync.stream())
 }
 
@@ -69,34 +69,34 @@ function css() {
                 cascade: true
             })
         )
-        .pipe(dest(path.build.css))
+        .pipe(docs(path.build.css))
         .pipe(clean_css())
         .pipe(
             rename({
                 extname: ".min.css"
             })
         )
-        .pipe(dest(path.build.css))
+        .pipe(docs(path.build.css))
         .pipe(browsersync.stream())
 }
 
 function js() {
     return src(path.src.js)
         .pipe(fileinclude())
-        .pipe(dest(path.build.js))
+        .pipe(docs(path.build.js))
         .pipe(uglify())
         .pipe(
             rename({
                 extname: ".min.js"
             })
         )
-        .pipe(dest(path.build.js))
+        .pipe(docs(path.build.js))
         .pipe(browsersync.stream())
 }
 
 function images() {
     return src(path.src.img)
-        .pipe(dest(path.build.img))
+        .pipe(docs(path.build.img))
         .pipe(browsersync.stream())
 }
 

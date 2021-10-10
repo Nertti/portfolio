@@ -152,12 +152,10 @@
           font-size: 18px;
           font-weight: 500;
           color: $nav_link;
-          //color: rgba(102, 102, 102, 0.8);
           cursor: pointer;
           transition: 0.3s;
           &:hover{
             color: $txt;
-            //color: #666666;
           }
         }
       }
