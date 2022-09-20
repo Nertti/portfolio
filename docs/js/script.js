@@ -84,9 +84,7 @@ $(document).ready(function () {
         $('.nav__burger,.nav__menu').toggleClass('active');
         $('body').toggleClass('lock');
     });
-});
-
-;
+});;
 $(document).ready(function () {
     $(window).resize(function () {
         if ($(window).width() < 500) {
