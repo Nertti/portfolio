@@ -373,22 +373,22 @@ h6 {
   max-width: 60px;
 }
 
-.services .services__content .services__item .services__name .services__icon #mobile {
+.services .services__content .services__item .services__name .services__icon #cms {
   position: absolute;
   top: 13px;
-  left: 21px;
+  left: 13px;
 }
 
-.services .services__content .services__item .services__name .services__icon #brand {
+.services .services__content .services__item .services__name .services__icon #php {
   position: absolute;
-  top: 17px;
-  left: 18px;
+  top: 8px;
+  left: 8px;
 }
 
 .services .services__content .services__item .services__name .services__icon #web {
   position: absolute;
-  top: 18px;
-  left: 18px;
+  top: 8px;
+  left: 10px;
 }
 
 .services .services__content .services__item .services__name .services__txt {
