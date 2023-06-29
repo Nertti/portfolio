@@ -1,91 +1,107 @@
-.hi__row{
+.hi__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 80px 0 0;
-  @include laptop-S{
+  @include laptop-S {
     display: block;
     max-width: 450px;
     width: 100%;
     margin: 0 auto;
   }
-  @include tablet-S{
+  @include tablet-S {
     padding: 80px 0 0;
   }
-  .hi__txt{
+
+  .hi__txt {
     padding: 0 0 50px;
-    .hi__title{
+
+    .hi__title {
       font-weight: 500;
       font-size: 24px;
       color: $txt;
     }
-    .hi__name{
+
+    .hi__name {
       font-weight: bold;
       font-size: 60px;
       color: $title;
       padding: 30px 0;
-      @include laptop-M{
+      @include laptop-M {
         font-size: 58px;
       }
-      @include laptop-S{
+      @include laptop-S {
         font-size: 48px;
       }
     }
-    .hi__desc{
+
+    .hi__desc {
       font-size: 24px;
       color: $txt;
       padding: 10px 0 50px;
-      @include laptop-S{
+      @include laptop-S {
         padding: 5px 0 30px;
       }
     }
   }
-  .hi__img{
+
+  .hi__img {
     position: relative;
     //z-index: 51;
     //top: -60px;
-    @include laptop-S{
+    margin-top: 20px;
+
+    img {
+      border-radius: 25px;
+    }
+
+    @include laptop-S {
       display: none;
     }
   }
 }
 
-.services{
+.services {
   padding-bottom: 70px;
-  .services__head{
-    @include laptop-S{
+
+  .services__head {
+    @include laptop-S {
       max-width: 450px;
       width: 100%;
       margin: 0 auto;
     }
-    .services__title{
+
+    .services__title {
       max-width: 250px;
       padding: 10px 0 50px;
       letter-spacing: 1.4px;
     }
   }
-  .services__content{
+
+  .services__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include laptop-S{
+    @include laptop-S {
       flex-direction: column;
     }
-    .services__item{
+
+    .services__item {
       max-width: 350px;
       width: 100%;
-      @include laptop-S{
+      @include laptop-S {
         max-width: 450px;
       }
-      .services__name{
+
+      .services__name {
         display: flex;
         align-items: center;
-        @include tablet-XS{
+        @include tablet-XS {
           padding: 10px 0;
           position: relative;
           cursor: pointer;
           &:before,
-          &:after{
+          &:after {
             content: '';
             width: 20px;
             height: 2px;
@@ -95,52 +111,58 @@
             transition: all 0.4s ease 0s;
             border-radius: 10px;
           }
-          &:before{
+          &:before {
             transform: rotate(40deg);
             right: 16px;
           }
-          &:after{
+          &:after {
             transform: rotate(-40deg);
             right: 1px;
           }
           &.active:before,
-          &.active:after{
+          &.active:after {
             background-color: $purple;
           }
-          &.active:after{
+          &.active:after {
             transform: rotate(40deg);
           }
-          &.active:before{
+          &.active:before {
             transform: rotate(-40deg);
           }
         }
-        .services__icon{
+
+        .services__icon {
           position: relative;
-          img{
+
+          img {
             color: $title;
             max-width: 60px;
           }
-          #mobile{
+
+          #cms {
             position: absolute;
             top: 13px;
-            left: 21px;
+            left: 13px;
           }
-          #brand{
+
+          #php {
             position: absolute;
-            top: 17px;
-            left: 18px;
+            top: 8px;
+            left: 12px;
           }
-          #web{
+
+          #web {
             position: absolute;
-            top: 18px;
-            left: 18px;
+            top: 8px;
+            left: 10px;
           }
         }
-        .services__txt{
-          @include mobile-M{
+
+        .services__txt {
+          @include mobile-M {
             font-size: 20px;
           }
-          @include mobile-S{
+          @include mobile-S {
             font-size: 18px;
           }
           padding-left: 20px;
@@ -149,7 +171,8 @@
           color: $title;
         }
       }
-      .services__description{
+
+      .services__description {
         display: none;
         padding: 20px 0;
         font-size: 18px;
@@ -161,36 +184,41 @@
   }
 }
 
-.portfolio{
+.portfolio {
   padding-bottom: 70px;
   min-width: 0;
-  @include laptop-S{
+  @include laptop-S {
     padding: 0 0 30px;
   }
-  .portfolio__head{
-    @include laptop-S{
+
+  .portfolio__head {
+    @include laptop-S {
       max-width: 450px;
       width: 100%;
       margin: 0 auto;
     }
-    .portfolio__row{
+
+    .portfolio__row {
       display: flex;
       justify-content: space-between;
-      @include laptop-S{
+      @include laptop-S {
         display: block;
         padding: 0 0 20px;
       }
-      .portfolio__title{
+
+      .portfolio__title {
         max-width: 200px;
         padding: 10px 0 50px;
       }
-      .portfolio__more{
+
+      .portfolio__more {
         display: flex;
         max-width: 185px;
         width: 100%;
         align-items: flex-start;
         justify-content: space-between;
-        p{
+
+        p {
           font-weight: 600;
           font-size: 24px;
           text-decoration-line: underline;
@@ -198,18 +226,21 @@
           color: $txt;
           cursor: pointer;
         }
-        p:hover{
+
+        p:hover {
           color: $title;
         }
-        img{
+
+        img {
           width: 24px;
           cursor: pointer;
         }
       }
     }
   }
-  .portfolio__content{
-    .portfolio__slider-name{
+
+  .portfolio__content {
+    .portfolio__slider-name {
       max-width: 450px;
       width: 100%;
       font-size: 30px;
@@ -217,7 +248,7 @@
       padding: 20px 0;
       font-weight: 500;
       color: $title;
-      @include laptop-S{
+      @include laptop-S {
         font-size: 25px;
         line-height: 30px;
         margin: 0 auto;
@@ -225,21 +256,24 @@
     }
   }
 }
-.contact-me{
+
+.contact-me {
   padding-bottom: 70px;
   min-width: 0;
-  .contact-me__head{
+
+  .contact-me__head {
     max-width: 450px;
-    @include laptop-S{
+    @include laptop-S {
       max-width: 450px;
       width: 100%;
       margin: 0 auto;
     }
-    .contact-me__title{
-      @include mobile-L{
+
+    .contact-me__title {
+      @include mobile-L {
         font-size: 30px;
       }
-      @include mobile-S{
+      @include mobile-S {
         font-size: 25px;
       }
       width: 100%;
@@ -248,20 +282,45 @@
       color: $title;
     }
   }
-  .contact-me__content{
+
+  .contact-me__content {
     padding: 20px 0;
-    .contact-me__icons{
+
+    .contact-me__icons {
       display: flex;
       justify-content: space-around;
-      .contact-me__icon{
+
+      @include tablet-S {
+        flex-wrap: wrap;
+        max-width: 390px;
+        margin: 0 auto;
+      }
+
+      .contact-me__icon {
         position: relative;
         max-width: 100px;
         width: 100%;
-        .icon{
+
+        @include tablet-S {
+          &:last-child {
+            top: 30px;
+          }
+        }
+
+        .icon {
           max-width: 100%;
         }
-        &.icon_up{
+
+        &.icon_up {
           top: 30px;
+        }
+
+        .inner_icon {
+          position: absolute;
+          max-width: 50px;
+          width: 100%;
+          top: 23px;
+          left: 25px;
         }
       }
     }

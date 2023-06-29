@@ -326,6 +326,11 @@ h6 {
 
 .hi__row .hi__img {
   position: relative;
+  margin-top: 20px;
+}
+
+.hi__row .hi__img img {
+  border-radius: 25px;
 }
 
 .services {
@@ -373,22 +378,22 @@ h6 {
   max-width: 60px;
 }
 
-.services .services__content .services__item .services__name .services__icon #mobile {
+.services .services__content .services__item .services__name .services__icon #cms {
   position: absolute;
   top: 13px;
-  left: 21px;
+  left: 13px;
 }
 
-.services .services__content .services__item .services__name .services__icon #brand {
+.services .services__content .services__item .services__name .services__icon #php {
   position: absolute;
-  top: 17px;
-  left: 18px;
+  top: 8px;
+  left: 12px;
 }
 
 .services .services__content .services__item .services__name .services__icon #web {
   position: absolute;
-  top: 18px;
-  left: 18px;
+  top: 8px;
+  left: 10px;
 }
 
 .services .services__content .services__item .services__name .services__txt {
@@ -511,6 +516,14 @@ h6 {
 
 .contact-me .contact-me__content .contact-me__icons .contact-me__icon.icon_up {
   top: 30px;
+}
+
+.contact-me .contact-me__content .contact-me__icons .contact-me__icon .inner_icon {
+  position: absolute;
+  max-width: 50px;
+  width: 100%;
+  top: 23px;
+  left: 25px;
 }
 
 ::-webkit-scrollbar {
@@ -640,6 +653,17 @@ h6 {
 
   .hi__row {
     padding: 80px 0 0;
+  }
+
+  .contact-me .contact-me__content .contact-me__icons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 390px;
+    margin: 0 auto;
+  }
+
+  .contact-me .contact-me__content .contact-me__icons .contact-me__icon:last-child {
+    top: 30px;
   }
 }
 

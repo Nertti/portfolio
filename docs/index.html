@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Daniil Neretin</title>
+    <title>Nertti</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Red+Hat+Display:wght@400;500;600;700;800&display=swap"
           rel="stylesheet">
-
+    <link rel="shortcut icon" href="img/original-logo.ico" type="image/x-icon">
 </head>
 <body>
 <div class="wrapper">
@@ -19,7 +19,7 @@
     <div class="container">
         <div class="nav__row">
             <div class="logo">
-                <img src="img/Logo(2).svg">
+                <img src="img/logo.svg">
                 <span>N</span>
             </div>
             <div title="My instagram" onclick="location.href='https://www.instagram.com/nertti'" class="nertti">
@@ -35,7 +35,7 @@
                     <li class="nav_link" data-goto=".services" title="Services">Services</li>
                     <li class="nav_link" data-goto=".portfolio" title="Works">Works</li>
                     <li class="nav_link" data-goto=".contact-me" title="Contact me">Contact Me</li>
-                    <li class="settings" title="Settings">Settings</li>
+<!--                    <li class="settings" title="Settings">Settings</li>-->
                 </ul>
             </nav>
         </div>
@@ -48,13 +48,15 @@
                     <div class="hi__txt">
                         <p class="hi__title">Hello, my name is</p>
                         <p class="hi__name">Daniil Neretin</p>
-                        <p class="hi__desc">PHP-developer</p>
-                        <div title="Multilink" onclick="location.href='https://ylink.me/nertti'" class="button">
+                        <p class="hi__desc">novice PHP-programmer</p>
+                        <div title="linkedin" onclick="location.href='https://www.linkedin.com/in/nertti/'"
+                             class="button">
                             Let’s Talk
                         </div>
                     </div>
                     <div class="hi__img">
-                        <img src="img/icon.svg" height="600" alt="my-photo">
+                        <!--                        <img src="img/icon.svg" height="600" alt="my-photo">-->
+                        <img src="img/photo.jpg" height="500" alt="my-photo">
                     </div>
                 </div>
             </div>
@@ -71,42 +73,45 @@
                         <div class="services__name">
                             <div class="services__icon">
                                 <img src="img/icon.svg">
-                                <img id="mobile" src="img/mobile.svg">
+                                <img id="cms" src="img/cms.svg">
                             </div>
-                            <div class="services__txt">UX Research</div>
+                            <div class="services__txt">CMS</div>
                         </div>
                         <div class="services__description">
-                            New demos are continually added and buying a single license for Mak gives you access to all
-                            of
-                            what's shown below, plus everything that will be added in the future.
+                            When developing a website, I always prefer to choose a CMS system, because it provides me
+                            with convenient content management, significantly speeds up the development process thanks
+                            to ready-made themes and plugins, and also offers built-in tools for optimizing and
+                            effectively managing the functionality of my site.
                         </div>
                     </div>
                     <div class="services__item">
                         <div class="services__name">
                             <div class="services__icon">
                                 <img src="img/icon.svg">
-                                <img id="brand" src="img/brand.svg">
+                                <img id="php" src="img/php.svg">
                             </div>
-                            <div class="services__txt">Design</div>
+                            <div class="services__txt">PHP</div>
                         </div>
                         <div class="services__description">
-                            New demos are continually added and buying a single license for Mak gives you access to all
-                            of
-                            what's shown below, plus everything that will be added in the future.
+                            I choose PHP because it is a powerful and flexible programming language that has a huge
+                            community of developers, a wide range of tools and frameworks, as well as the ability to
+                            create dynamic and functional web applications with convenient integration of databases and
+                            content management systems.
                         </div>
                     </div>
                     <div class="services__item">
                         <div class="services__name">
                             <div class="services__icon">
                                 <img src="img/icon.svg">
-                                <img id="web" src="img/web-site.svg">
+                                <img id="web" src="img/programming.svg">
                             </div>
                             <div class="services__txt">Web Development</div>
                         </div>
                         <div class="services__description">
-                            New demos are continually added and buying a single license for Mak gives you access to all
-                            of
-                            what's shown below, plus everything that will be added in the future.
+                            I like writing web applications because it allows me to express my creative essence, create
+                            unique and interactive user interfaces, solve complex tasks and bring new innovations to the
+                            web world, as well as constantly expand my knowledge and skills, following the development
+                            of technologies and user requirements.
                         </div>
                     </div>
                 </div>
@@ -126,39 +131,35 @@
                     </div>
                 </div>
                 <div class="portfolio__content">
-<!--                    <div class="portfolio__slider-name">Adaptive layout</div>-->
+                    <!--                    <div class="portfolio__slider-name">Adaptive layout</div>-->
                     <div class="image-slider swiper-container">
                         <div class="image-slider__wrapper swiper-wrapper">
                             <div class="image-slider__slide swiper-slide">
                                 <div class="image-slider__image">
-                                    <img onclick="location.href='https://nertti.github.io/WebProjectPolar/'"
-                                         src="img/project1.svg">
+                                    <a title="esvet.by" href="https://esvet.by" target="_blank">
+                                        <img src="img/esvet.png" alt="esvet.by">
+                                    </a>
                                 </div>
                             </div>
                             <div class="image-slider__slide swiper-slide">
                                 <div class="image-slider__image">
-                                    <img onclick="location.href='https://nertti.github.io/WebProjectLocus/'"
-                                         src="img/project2.svg">
+                                    <a title="cosmolac.by" href="https://cosmolac.by" target="_blank">
+                                        <img src="img/cosmolac.png" alt="cosmolac.by">
+                                    </a>
                                 </div>
                             </div>
                             <div class="image-slider__slide swiper-slide">
                                 <div class="image-slider__image">
-                                    <img src="img/project1.svg">
+                                    <a title="mirnasosov.by" href="https://mirnasosov.by" target="_blank">
+                                        <img src="img/mirnasosov.png" alt="mirnasosov.by">
+                                    </a>
                                 </div>
                             </div>
                             <div class="image-slider__slide swiper-slide">
                                 <div class="image-slider__image">
-                                    <img src="img/project1.svg">
-                                </div>
-                            </div>
-                            <div class="image-slider__slide swiper-slide">
-                                <div class="image-slider__image">
-                                    <img src="img/project2.svg">
-                                </div>
-                            </div>
-                            <div class="image-slider__slide swiper-slide">
-                                <div class="image-slider__image">
-                                    <img src="img/project2.svg">
+                                    <a title="food375.by" href="https://shop.food375.by" target="_blank">
+                                        <img src="img/food375.png" alt="food375.by">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +169,6 @@
                         <div class="swiper-pagination"></div>
 
                     </div>
-
                 </div>
             </div>
         </div>
@@ -177,26 +177,40 @@
                 <div class="contact-me__head">
                     <div class="name">Contact me</div>
                     <div class="line"></div>
-                    <div class="title contact-me__title">Let me know if you want to talk about a potential
-                        collaboration.
+                    <div class="title contact-me__title">If you want to talk about a potential collaboration.
                     </div>
                 </div>
                 <div class="contact-me__content">
                     <div class="contact-me__icons">
                         <div class="contact-me__icon">
-                            <img class="icon" src="img/icon.svg">
+                            <a href="https://www.linkedin.com/in/nertti/" target="_blank" title="linkedin">
+                                <img class="icon" src="img/icon.svg">
+                                <img class="inner_icon" src="img/linkedin.svg">
+                            </a>
                         </div>
                         <div class="contact-me__icon icon_up">
-                            <img class="icon" src="img/icon.svg">
+                            <a href="https://www.instagram.com/nertti/" target="_blank" title="instagram">
+                                <img class="icon" src="img/icon.svg">
+                                <img class="inner_icon" src="img/instagram.svg">
+                            </a>
                         </div>
                         <div class="contact-me__icon">
-                            <img class="icon" src="img/icon.svg">
+                            <a href="https://github.com/Nertti" target="_blank" title="github">
+                                <img class="icon" src="img/icon.svg">
+                                <img class="inner_icon" src="img/github.svg">
+                            </a>
                         </div>
                         <div class="contact-me__icon icon_up">
-                            <img class="icon" src="img/icon.svg">
+                                <a href="mailto: neretindaniil01@gmail.com" target="_blank" title="e-mail">
+                                <img class="icon" src="img/icon.svg">
+                                <img class="inner_icon" src="img/mail.svg">
+                            </a>
                         </div>
                         <div class="contact-me__icon">
-                            <img class="icon" src="img/icon.svg">
+                            <a href="https://www.instagram.com/nertti/" target="_blank" title="multi-link">
+                                <img class="icon" src="img/icon.svg">
+                                <img class="inner_icon" src="img/link.svg">
+                            </a>
                         </div>
                     </div>
                 </div>
