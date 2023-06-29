@@ -326,6 +326,11 @@ h6 {
 
 .hi__row .hi__img {
   position: relative;
+  margin-top: 20px;
+}
+
+.hi__row .hi__img img {
+  border-radius: 25px;
 }
 
 .services {
@@ -382,7 +387,7 @@ h6 {
 .services .services__content .services__item .services__name .services__icon #php {
   position: absolute;
   top: 8px;
-  left: 8px;
+  left: 12px;
 }
 
 .services .services__content .services__item .services__name .services__icon #web {
@@ -513,6 +518,14 @@ h6 {
   top: 30px;
 }
 
+.contact-me .contact-me__content .contact-me__icons .contact-me__icon .inner_icon {
+  position: absolute;
+  max-width: 50px;
+  width: 100%;
+  top: 23px;
+  left: 25px;
+}
+
 ::-webkit-scrollbar {
   /* 1 - скроллбар */
   width: 8px;
@@ -640,6 +653,17 @@ h6 {
 
   .hi__row {
     padding: 80px 0 0;
+  }
+
+  .contact-me .contact-me__content .contact-me__icons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 390px;
+    margin: 0 auto;
+  }
+
+  .contact-me .contact-me__content .contact-me__icons .contact-me__icon:last-child {
+    top: 30px;
   }
 }
 
